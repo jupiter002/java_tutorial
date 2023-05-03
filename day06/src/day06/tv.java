@@ -20,10 +20,8 @@ public class tv {
 	public void showInfo() {
 		System.out.println("우리집 TV는 "+brand+"이고 "+year+"에 생산되었고 "+inch+"인치 입니다");
 		
+
+		
 		
 	}
-	
-	
-	
-	
 }
