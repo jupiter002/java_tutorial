@@ -4,7 +4,9 @@ public class cylinder {
 	public cylinder(int r, int h) {
 		this.h=h;
 		this.r=r;
-
+	public calculate() {
+		return r
+	}
 		
 		
 		
