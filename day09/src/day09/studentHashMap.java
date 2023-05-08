@@ -68,9 +68,9 @@ public class studentHashMap {
 		studentMap.put("아무개3",new Student02("c","3","JS",4.1));
 		studentMap.put("아무개4",new Student02("d","4","PHP",3.5));
 		
-		Set<String>keys = studentMap.keySet();
-		Iterator<String> it = keys.iterator();
-		
+		Set<String>keys = studentMap.keySet();	//set생성해서 KeySet메소드로 키값넣고
+		Iterator<String> it = keys.iterator();	//반복문 돌리려고 iterator에 넣음
+	
 //		for(Map.Entry<String, Student02>item:studentMap.entrySet()) {
 //		System.out.println(item.getKey()+" : "+ item.getValue);
 		
@@ -83,17 +83,18 @@ public class studentHashMap {
 		
 		// iterator 통해서 반복문 만들어 보기...
 		// 이름을 입력했을때 출력해보기.
+		
 		while(true) {
 			System.out.println("학생이름을 입력하세요.");
 			String name = sc.next();
-			if(name.equals("exit")) {
+			if(name.equals("exit")) { 
 				break;
 			}
 			Student02 student = studentMap.get(name);
-			System.out.println(student.getName()+" / ");
-			System.out.println(student.getId()+" / ");
-			System.out.println(student.getDepartment()+" / ");
-			System.out.println(student.getGrade()+" / ");
+			System.out.print(student.getName()+" / ");
+			System.out.print(student.getId()+" / ");
+			System.out.print(student.getDepartment()+" / ");
+			System.out.print(student.getGrade()+" / ");
 			
 		}
 		
