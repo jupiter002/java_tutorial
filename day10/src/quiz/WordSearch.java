@@ -11,24 +11,9 @@ public class WordSearch {
 		Vector<String> V_eng = new Vector<>();
 		Scanner sc = new Scanner(System.in);
 		
+		File eng = new File("C:\\Users\\y\\Documents\\카카오톡 받은 파일\\words.txt");
 		
-		try {
-			FileInputStream eng = new FileInputStream("C:\\Users\\y\\Documents\\카카오톡 받은 파일\\words.txt");
-			int c;
-			while((c = eng.read())!=-1) {
-				meta += (char)c;
-				
-			}
-			String [] tokens = meta.split("ln");
-			for(int i=0; i<meta.length(); i++) {
-				V_eng.add(tokens[i]);
-			}
-			eng.close();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	
+			
 		
 	
 	
