@@ -15,7 +15,7 @@ public class WordSearchTest {
 				String line = wordReader.readLine();
 				if(line==null)break;
 				wordList.add(line);
-				
+					
 			}
 			wordReader.close();
 //			System.out.println(wordList.size());
@@ -30,8 +30,9 @@ public class WordSearchTest {
 					if(search.equals(frontword)) {
 						System.out.println(word);
 					}
+				}
 			}
-			}
+			fileReader.close();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
