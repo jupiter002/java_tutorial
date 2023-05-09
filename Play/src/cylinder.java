@@ -1,14 +1,16 @@
-
-public class cylinder {
-	private int r,h;
-	public cylinder(int r, int h) {
-		this.h=h;
-		this.r=r;
+class Cyilnder{
+private int r,h;
+	public Cyilnder(int r, int h) {
+	this.r = r;
+	this.h = h;
+}
 	public calculate() {
-		return r
+		return r;
 	}
+public class cylinder {
+	
 		
 		
 		
-	}
+	
 }
